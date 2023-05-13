@@ -5,8 +5,6 @@ class RandomIndex
     private int _index;
     private List<int> _currentIndexes = new List<int>();
     // private List<int> previousIndexes = new List<int>();
-
-
     public void AddRandomIndex(int scriptureLength)
     {
         bool keepGoing = true;
