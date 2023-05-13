@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story page</title>
+    <link rel="stylesheet" href="styles/story.css">
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="home-page.html">
+            <img class="logo" src="images/logo_1.png" alt="B Logo">
+            <!-- https://stock.adobe.com/search?k=%22letter+b+logo%22&asset_id=529871618 -->
+        </a>
+        <nav>
+            <a href="home-page.html">Home</a>
+            <a href="story.html">Our Story</a>
+            <a href="services.html">Services</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Book Appointment</a>
+        </nav>
+        <div class="social">
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.jpg" alt="instagram icon">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="story">
+            <h1>Our Story</h1>
+            <p>My husband and I would consider ourselves the black sheep of our families. Both a little edgy and different but have always shown that with our style. 
+            However, coming to embrace my style was not always easy. I saw everything so negatively and it made me scared to be who I wanted to be. 
+            Eventually I forced myself out of my shell and decided I wanted better and explore the endless stylistic possibilities. When you come into the shop you'll see me with a new dew essentially everytime!
+            This was my journey to where I am today and I want every person that sits in my chair to feel liberated to be themselves too.                                       
+            </p>
+            <img src="images/our_story.jpg" alt="family pic" class="sketchy">
+        </section>
+        <section class="vision">
+            <h1>Our Vision</h1>
+            <p>Your hair is part of your identity! So getting that perfect blowout, haircut, or color will reflect your truest happiest self. Hair is my favorite way to bring positivity into my life and others. And hopefully yours someday too!</p>
+            <img src="images/our_story_1.jpg" alt="our baby" class="sketchy">
+        </section>
+    </main>
+
+    <footer>
+        <div id="feedback">
+
+        </div>
+        <form action="/my-handling-form-page" method="post">
+        <!-- The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
+        The method attribute defines which HTTP method to send the data with (usually get or post).
+        https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form -->
+        <ul>
+            <p>Contact Us</p>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name"/>
+            </li>
+            <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email"/>
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+            </li>
+            <li class="button">
+                <button type="submit">Send your message</button>
+            </li>
+        </ul>
+        
+        </form> 
+        <div id="contact">
+            <p>208-444-8765</p>
+            <hr>
+            <p>Browns-salon-barb@gmail.com</p>
+            <hr>
+            <p>Hours:</p>
+            <p>Monday to Thursday 8 am to 8 pm</p>
+            <p>Friday to Saturday 8 am to 12 pm</p>
+            <hr>
+            <p>1234 Broadbank ave., Rigby ID, 83442</p>
+            <a href="site-plan-cosmo.html">site plan</a>
+        </div>
+        
+
+    </footer>
+<script>
+    const feedbackElement = document.getElementById('feedback');
+    const formElement = document.forms[0];
+    formElement.addEventListener('submit', function(e) {
+        e.preventDefault();
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        feedbackElement.style.display = 'block';
+        document.body.classList.toggle('moveDown');
+    }) ;
+</script>
+</body>
+</html>
