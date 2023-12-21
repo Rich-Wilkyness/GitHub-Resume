@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, Chamber Home Page">
+    <meta name="author" content="Richard Christian Wilkerson">    
+    <title>R. Christian Wilkerson - WDD 230 - Ririe City Commerce Thank You Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="./ririe-favicon.ico">
+
+    <meta property="og:title" content="Ririe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/ririe-community-hall.jpg">
+    <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/ririe-logo.webp" alt="city of Ririe logo" id="header-image">
+        <h1>Ririe Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <button id="menu" tabindex="0" aria-label="Menu" aria-expanded="false"></button>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="">Directory</a>
+            <a href="join.html">Join</a>
+        </div>
+    </nav>
+
+    <main id="thank">
+        <h1>Thank you for your interest in joining the Ririe Chamber of Commerce!</h1>
+        <p>You should receive a confirmation via email that we have received your application and another with the results</p>
+    </main>
+    <footer>
+        <p>###-###-#### ririeChamber@gmail.com</p>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/ham-nav.js"></script>
+</body>
+</html>

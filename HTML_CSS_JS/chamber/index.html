@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, Ririe, Idaho Chamber of Commerce Home Page">
+    <meta name="author" content="Richard Christian Wilkerson">    
+    <title>R. Christian Wilkerson - WDD 230 - Ririe, Idaho Chamber of Commerce Home Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="./ririe-favicon.ico">
+
+    <meta property="og:title" content="Ririe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/ririe-community-hall-700.webp">
+    <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/ririe-logo.webp" alt="city of Ririe logo" id="header-image">
+        <h1>Ririe Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <button id="menu" tabindex="0" aria-label="Menu" aria-expanded="false"></button>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="banner" class="banner">
+            <h2>Join us for the Chamber of Commerce Meet and Greet!</h2>
+            <p>Wednesday at 7:00 p.m.</p>
+            <button id="closeButton" onclick="closeBanner()">❌</button>
+        </div>
+
+        <div id="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/river-400.webp">
+                <img src="images/river-800.webp" alt="ririe snake river">
+            </picture>
+            <h2>Ririe Snake River</h2>
+        </div>
+
+        <div class="break"></div>
+        <section id="first">
+
+            <div id="slideshow-container">
+
+                <div id="slideshow-buttons">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+            <div id="calendar">
+                <h2>Events</h2>
+                <div class="event">
+                    <div>
+                        <h2>Aug 13, 2023</h2>
+                    </div>
+                    <div>
+                        <img src="images/workshop.webp" alt="workshop" loading="lazy">
+                    </div>
+                    <div>
+                        <h2>Small Business Workshop</h2>
+                        <p>Topics such as marketing strategies, financial management, customer service, and digital transformation.</p>
+                    </div>
+                    <div>
+                        <p>Ririe Library</p>
+                        <a href="https://goo.gl/maps/jJtMtywU7cQxoppt8">464 Main St, Ririe, ID 83443</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <h2>Aug 27, 2023</h2>
+                    </div>
+                    <div>
+                        <img src="images/volunteer.webp" alt="volunteer" loading="lazy">
+                    </div>
+                    <div>
+                        <h2>Community Volunteer Day</h2>
+                        <p>Park and school clean up</p>
+                    </div>
+                    <div>
+                        <p>Ririe Highschool</p>
+                        <a href="https://goo.gl/maps/Ym4JciJbA3ALL4jd7">13809 130th Rd E, Ririe, ID 83443</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <h2>Sep 13, 2023</h2>
+                    </div>
+                    <div>
+                        <img src="images/culture.webp" alt="Cultural Festival" loading="lazy">
+                    </div>
+                    <div>
+                        <h2>Cultural Festival</h2>
+                        <p>Celebrating the cultural heritage of the city. Food vendors, live performances, traditional arts and crafts, and activities.</p>
+                    </div>
+                    <div>
+                        <p>Ririe Highschool</p>
+                        <a href="https://goo.gl/maps/Ym4JciJbA3ALL4jd7">13809 130th Rd E, Ririe, ID 83443</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="break"></div>
+        <section id="second">
+            <h2>About</h2>
+            <p>"Discover the endless possibilities in Ririe! Join the Ririe Chamber of Commerce today and unlock a world of opportunities for your business. Connect with like-minded entrepreneurs, access valuable resources, and gain a competitive edge in our thriving business community. Together, let's shape the future of Ririe. Take the first step towards success. Join the Ririe Chamber of Commerce now!"</p>
+            <a href="join.html" id="join-now-button">Join Now</a>
+        </section>
+        <div class="break"></div>
+        <section id="third">
+            <h2>Weather</h2>
+            <p>Ririe, Idaho is currently <span id="current-temp"></span> and <span id="temp-desc"></span></p> 
+
+            <div id="forecast-section">
+            <div class="forecast-container">
+                <div id="forecast-day-1"></div>
+                <div id="forecast-minMaxTemp-1"></div>
+                <img id="forecast-icon-1" src="images/not-loading.webp" alt="not loading" loading="lazy">
+            </div>
+            
+            <div class="forecast-container">
+                <div id="forecast-day-2"></div>
+                <div id="forecast-minMaxTemp-2"></div>
+                <img id="forecast-icon-2" src="images/not-loading.webp" alt="not loading" loading="lazy">
+            </div>
+            
+            <div class="forecast-container">
+                <div id="forecast-day-3"></div>
+                <div id="forecast-minMaxTemp-3"></div>
+                <img id="forecast-icon-3" src="images/not-loading.webp" alt="not loading" loading="lazy">
+            </div>
+            
+            <div class="forecast-container">
+                <div id="forecast-day-4"></div>
+                <div id="forecast-minMaxTemp-4"></div>
+                <img id="forecast-icon-4" src="images/not-loading.webp" alt="not loading" loading="lazy">
+            </div>   
+
+            <div class="forecast-container">
+                <div id="forecast-day-5"></div>
+                <div id="forecast-minMaxTemp-5"></div>
+                <img id="forecast-icon-5" src="images/not-loading.webp" alt="not loading" loading="lazy">
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>###-###-#### ririeChamber@gmail.com</p>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/nav-wayfinding.js"></script>
+    <script src="scripts/banner-meeting.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/menu-keyboard.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/slide-show.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, Ririe, Idaho Chamber of Commerce Join Page">
+    <meta name="author" content="Richard Christian Wilkerson">    
+    <title>R. Christian Wilkerson - WDD 230 - Ririe, Idaho Chamber of Commerce Join Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="./ririe-favicon.ico">
+
+    <meta property="og:title" content="Ririe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/ririe-community-hall-700.webp">
+    <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/ririe-logo.webp" alt="city of Ririe logo" id="header-image">
+        <h1>Ririe Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <button id="menu" tabindex="0" aria-label="Menu" aria-expanded="false"></button>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </div>
+    </nav>
+
+    <main id="join-main">
+        <form method="get" action="thankyou.html">
+            <div id="formmessage"></div>
+            <h1>Join Us</h1>
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">First Name<input type="text" name="fname" id="fname" required></label>
+            <label class="top">Last Name<input type="text" name="lname" id="lname" required></label>
+            <label class="top">Organization Position<input type="text" name="title" pattern="[A-Za-z -]{7,}" id="job-title"></label>
+            <label class="top">Email<input type="email" name="email" placeholder="myemail@gmail.com" id="email" required></label>
+            <label class="top">Mobile Phone Number (e.g., US)<input type="tel" name="mobile_phone_number" id="phone" required></label>
+    
+        </fieldset>
+        <fieldset>
+            <legend>Organization</legend>
+            <label class="top">Organization Name<input type="text" name="organization" id="organization" required></label>
+
+            <div id="membership">Membership Level</div>
+            <label class="sbs"><input type="radio" name="membership" value="non-profit"> Non-Profit</label>
+            <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze</label>
+            <label class="sbs"><input type="radio" name="membership" value="silver"> Silver</label>
+            <label class="sbs"><input type="radio" name="membership" value="gold"> Gold</label>
+
+            <label class="top">
+                Business Description
+                <textarea name="description" id="org-description"></textarea>
+            </label>
+
+            <label class="top"><input type="hidden" name="timestamp" id="timestamp"></label>
+
+        </fieldset>
+            <div class="button">
+            <input type="submit" value="Join" class="submitButton">
+            </div>
+        </form>
+
+        <div id="membership-details">
+        <fieldset>
+            <h2>Membership Levels</h2>
+            <h3>Non-Profit</h3>
+                <h4>Cost: Free</h4>
+                <p>Access to networking events: Attend chamber-hosted networking events to connect with other businesses and community leaders.</p>
+                <p>Educational resources: Gain access to educational workshops, seminars, and webinars on topics relevant to non-profit organizations.</p>
+                <p>Listing in the chamber's directory: Get listed in the chamber's online and printed directory to increase visibility within the business community.</p>
+            <h3>Bronze</h3>
+            <h4>Cost: $50/year</h4>
+            <p>Enhanced directory listing: Stand out with an enhanced listing in the chamber's directory, including a detailed profile and prominent placement.</p>
+            <p>Event discounts: Enjoy discounted rates or exclusive access to chamber-sponsored events, conferences, workshops, and seminars.</p>
+            <h3>Silver</h3>
+            <h4>Cost: $100/year</h4>
+            <p>Advertising opportunities: Showcase your organization through advertising options such as banner ads or sponsored content on the chamber's website or newsletter.</p>
+            <p>Recognition and awards: Get opportunities for recognition through awards, certificates, or mentions in the chamber's publications or at special events.</p>
+            <h3>Gold</h3>
+            <h4>Cost: $150/year</h4>
+            <p>VIP treatment: Receive personalized support from the chamber's staff, including dedicated account management and priority assistance.</p>
+            <p>Spotlight positions: Enjoy prominent positioning on the chamber's website, homepage, or event materials, maximizing your organization's exposure.</p>
+            <p>Sponsorship opportunities: Gain priority consideration for sponsorship opportunities at chamber events, providing additional brand visibility.</p>
+        </fieldset>
+        </div>
+    </main>
+    <footer>
+        <p>###-###-#### ririeChamber@gmail.com</p>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/nav-wayfinding.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/menu-keyboard.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>

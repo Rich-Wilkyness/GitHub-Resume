@@ -1,0 +1,89 @@
+@media (min-width: 650px) {
+
+    body {
+        background-image: url('../images/small-check.webp');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+    }
+    #home-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+    }
+    #home-first {
+        grid-column: 1/3;
+    }
+    #home-second {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    #home-third {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #home-first div:nth-child(1) img {
+        display: block;
+        padding-top: .5rem;
+    }
+    #home-first picture:nth-child(3) img {
+        display: none;
+    }
+    
+    /* For vehicle display in classification view */
+	#inv-display {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	#inv-display h2{
+		font-size: 1rem;
+	}
+
+	#inv-display a {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}      
+	#inv-display div {
+		width: 100%;
+	}
+
+    #vehicle-display {
+        display: flex;
+        justify-content: flex-start;
+    }
+    #vehicle-display div {
+        max-width: 50%;
+    }
+
+    /* vehicleView page */
+    .vehicle-layout {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+    }
+    .vehicle-info {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .vehicle-thumbnails {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    
+    }
+    #detailThumbnails {
+        display: flex;
+        flex-direction: column;
+    }
+    #detailThumbnails img:hover {
+        transform: scale(1.1);
+        transition: transform .4s;
+    }
+
+}

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue&family=Roboto:wght@500&display=swap');
+
+:root {
+    --font-color-ondark: #ffffff;
+    --font-color-onlight: #3a3a3a;
+    --primary-color: #ffffff ;
+    --secondary-color: #3a3a3a ;
+    --accent1-color: #a6cbeb;
+    --accent2-color: #bababa;
+    --button-color: #2A75B7;
+
+    --heading-font: 'Bangers', cursive;
+    --paragraph-font: 'Comic Neue', cursive;
+}
+html {
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--heading-font);
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+}
+a,p li{
+    font-family: var(--paragraph-font);
+}
+/* Background */
+.imgButton:hover {
+    transform: scale(1.2);
+}
+
+#body {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    border: 3px solid #4c96d7;
+    border-radius:1%;
+    background-color: var(--primary-color);
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-image {
+    max-width: 100%;
+    height: auto;
+}
+header a {
+    text-decoration: none;
+    color: var(--font-color-onlight);
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+nav ul{
+    display: flex;
+}
+nav li {
+    background-color: var(--secondary-color);
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+nav li:hover {
+    background-color: var(--button-color);
+    list-style: none;
+    transform: scale(1.1);
+}
+nav a {
+    text-decoration: none;
+    padding: .5rem;
+    color: var(--font-color-ondark);
+}
+nav a:link, nav a:visited {
+    color: var(--font-color-ondark);
+}
+h1 {
+    padding-left: 1rem;
+}
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-top: 3px solid var(--secondary-color);
+}
+footer p {
+    margin: 0;
+}
+
+
+
+/* Home Page */
+#home-first {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+}
+#home-first div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#home-first h2 {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: .5rem;
+}
+#home-first p { 
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: .2rem;
+}
+
+#home-first div:nth-child(1) {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    z-index: 1;
+    padding-left: 1rem;
+    color: var(--button-color);
+}
+#home-first div:nth-child(1) * {
+    margin: 0;
+}
+#home-first div:nth-child(1) img {
+    display: none;
+}
+#home-first picture:nth-child(2) {
+    grid-column: 1/1;
+    grid-row: 1/2;
+}
+#home-first picture:nth-child(2) img {
+    max-width: 100%;
+    height: auto;
+}
+#home-first picture:nth-child(3) {
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+#home-first picture:nth-child(3) img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#home-second {
+    padding-left: 1rem;
+}
+
+#home-third {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#home-third h3{
+    grid-column: 1/3;
+}
+.home-upgrades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: .5rem;
+    max-width: 80%;
+}
+.home-upgrades p {
+    text-decoration: underline;
+    color: purple;
+}
+.home-upgrades-color {
+    background-color: var(--button-color);
+    height: 85px;
+    min-width: 100%;
+    border: 2px solid var(--secondary-color);
+    margin: 0 auto; /* Center the image horizontally */
+}
+.home-upgrades-color img {
+    padding: .2rem;
+}
+
+/* Form */
+.message {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 80%;
+    color: var(--font-color-onlight);
+    background-color: rgb(255, 147, 147);
+    font-size: 22px;
+}
+
+#login-register-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+form fieldset {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: .5rem;
+}
+.form-group {
+    padding: 1rem;
+    padding: .75rem;
+    width: 100%;
+}
+.form-group p {
+    text-align: center;
+    font-size: 16px;
+}
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--font-color-onlight);
+    font-size: 16px;
+}
+form input, textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 16px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    background-color: var(--background-form-input);
+}
+form input.submitButton {
+    border: none;
+    background-color: var(--button-color);
+    color: var(--font-color-ondark);
+    border-radius: 1rem;
+    margin-top: .5rem;
+    padding: .75rem;
+    width: 100%;
+	transition: transform 0.3s ease;
+}
+form input.submitButton:hover {
+	background-color: rgb(212, 31, 31);
+	transform: scale(1.05);
+}
+select, option {
+    font-size: 16px;
+}
+/* add Vehicle form */
+
+
+/* Vehicle Management Page */
+.vehicle-management-div {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+.vehicle-management-div p {
+    padding-right: 1rem;
+    justify-self: center;
+}
+
+/* Admin Page */
+#admin-main li {
+    list-style: none;
+}
+#admin-main a {
+    margin: 3rem;
+    color: var(--font-color-onlight);
+    text-decoration: none;
+}
+#admin-main a:hover {
+    text-decoration: underline;
+}
+
+#inv-display {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+#inv-display li {
+    margin-bottom: .5em;
+    list-style-type: none;
+    flex: 1 1 auto;
+}
+#inv-display a {
+    border: 1px #ccc solid;
+    text-decoration: none;
+    color: var(--button-color);
+}
+#inv-display li img {
+    max-width: 100%;
+}
+
+#vehicle-display img {
+    max-width: 100%;
+}
+#vehicle-display :nth-child(2) {
+    padding: 1rem;
+    padding-top: 0rem;
+}
+#vehicle-display span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--button-color);
+}
+
+/* image management */
+  /* Remove border for the input[type="file"] element */
+input[type="file"] {
+    border: none;
+}
+.pImage {
+    display: inline-block; /* Display the labels inline */
+    margin-left: 10px;     /* Add spacing between the labels and radio buttons */
+    color: var(--font-color-onlight);
+    font-size: 16px;
+}
+.vehicleImgManagement{
+    display: flex;
+    flex-direction: column;
+}
+.vehicleImgManagement label{
+    margin-left: 10px;
+}
+
+.vehicleImgManagement input{
+    box-sizing: border-box;
+    appearance: auto;
+}
+.radio-container {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-bottom: .5rem;
+} 
+.vehicleImgManagement div {
+    padding-bottom: .4rem;
+}
+h2 {
+    margin-left: 10px;
+}
+.notice {
+    margin-left: 10px;
+}
+#image-display {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#image-display li {
+    margin: 0 auto;
+    text-align: center;
+}
+#image-display img {
+    width: 200px;
+
+}
+
+/* vehicleView page */
+.vehicle-layout {
+    flex-direction: column; 
+}
+.vehicle-thumbnails {
+    flex: 0; 
+    list-style: none;
+}
+#detailThumbnails {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+#detailThumbnails li{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+#detailThumbnails img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.vehicle-images {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/* Search Layout */
+#searchForm {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#searchForm label {
+    font-size: 24px;
+}
+#searchText {
+    width: 90%;
+    font-size: 16px;
+}
+#searchButton {
+    width: 30%;
+}
+
+
+.searchDisplay {
+    padding: .5rem;
+}
+.searchDisplay h2 {
+    padding-top: 1rem;
+}
+.searchDisplay a{
+    color: var(--button-color);
+    text-decoration: none;
+}
+.searchDisplay a:visited {
+    color: var(--button-color);
+}
+.paginationDisplay {
+    font-size: 24px; /* You can adjust the size as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginationDisplay a {
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.currentPage {
+    font-size: 32px;
+}
+.arrow-flip {
+    transform: rotate(180deg);
+}

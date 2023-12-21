@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- https://rich-wilkyness.github.io/wdd230/ -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development, R. Christian Wilkerson, Ririe, Idaho Chamber of Commerce Discover Page">
+    <meta name="author" content="Richard Christian Wilkerson">    
+    <title>R. Christian Wilkerson - WDD 230 - Ririe, Idaho Chamber of Commerce Discover Page</title>
+
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="./ririe-favicon.ico">
+
+    <meta property="og:title" content="Ririe Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="chamber/images/ririe-community-hall-700.webp">
+    <meta property="og:url" content="https://rich-wilkyness.github.io/wdd230/chamber/index.html">
+</head>
+<body>
+    <header>
+        <img src="images/ririe-logo.webp" alt="city of Ririe logo" id="header-image">
+        <h1>Ririe Chamber of Commerce</h1>
+
+    </header>
+    <nav>
+        <button id="menu" tabindex="0" aria-label="Menu" aria-expanded="false"></button>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </div>
+    </nav>
+
+    <main id="discover-main">
+        <section id="discover-info">
+            <div class="last-visited">
+                <h3 id="visited"></h3>
+            </div>
+            <div>
+                <h2>Events</h2>
+                <div class="event">
+                    <div>
+                        <h2>Aug 13, 2023</h2>
+                    </div>
+                    <div>
+                        <img src="images/workshop.webp" alt="workshop" loading="lazy">
+                    </div>
+                    <div>
+                        <h2>Small Business Workshop</h2>
+                        <p>Topics such as marketing strategies, financial management, customer service, and digital transformation.</p>
+                    </div>
+                    <div>
+                        <p>Ririe Library</p>
+                        <a href="https://goo.gl/maps/jJtMtywU7cQxoppt8">464 Main St, Ririe, ID 83443</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <h2>Aug 27, 2023</h2>
+                    </div>
+                    <div>
+                        <img src="images/volunteer.webp" alt="volunteer" loading="lazy">
+                    </div>
+                    <div>
+                        <h2>Community Volunteer Day</h2>
+                        <p>Park and school clean up</p>
+                    </div>
+                    <div>
+                        <p>Ririe Highschool</p>
+                        <a href="https://goo.gl/maps/Ym4JciJbA3ALL4jd7">13809 130th Rd E, Ririe, ID 83443</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div>
+                        <h2>Sep 13, 2023</h2>
+                    </div>
+                    <div>
+                        <img src="images/culture.webp" alt="Cultural Festival" loading="lazy">
+                    </div>
+                    <div>
+                        <h2>Cultural Festival</h2>
+                        <p>Celebrating the cultural heritage of the city. Food vendors, live performances, traditional arts and crafts, and activities.</p>
+                    </div>
+                    <div>
+                        <p>Ririe Highschool</p>
+                        <a href="https://goo.gl/maps/Ym4JciJbA3ALL4jd7">13809 130th Rd E, Ririe, ID 83443</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Local Demographics</h2>
+                <ul>
+                    <li>Population: 756</li>
+                    <li>Median Age: 32.1 years</li>
+                    <li>Elevation: 4,964′</li>
+                </ul>
+            </div>
+        </section>
+        <section id="discover-gallery">
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/zip-lining-500.webp">
+                    <img src="images/zip-lining-700.webp" alt="zip-lining" width="700" height="467" loading="lazy">
+                </picture>
+                <h2>Heise Zip-Lining</h2>  
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/fishing-500.webp">
+                    <img src="images/fishing-700.webp" alt="fishing" width="700" height="467" loading="lazy">
+                </picture>
+                <h2>Fishing</h2>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/heise-pool-slide-500.webp">
+                    <img src="images/heise-pool-slide-700.webp" alt="heise swimming" width="700" height="467" loading="lazy">
+                </picture>
+                <h2>Heise Swimming</h2>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/heise-golf-lodge2-500.webp">
+                    <img src="images/heise-golf-lodge2-700.webp" alt="heise golfing" width="700" height="467" loading="lazy">
+                </picture>
+                <h2>Heise Golfing</h2>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/snow-boarding-500.webp">
+                    <img src="images/snow-boarding-700.webp" alt="kelly canyon snow boarding" width="700" height="467" loading="lazy">
+                </picture>
+                <h2>Kelly Canyon Snow Boarding</h2>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/blacktail-ririe-reservoir-500.webp">
+                    <img src="images/blacktail-ririe-reservoir-700.webp" alt="ririe reservoir" width="700" height="467" loading="lazy">
+                </picture>
+                <h2>Ririe Blacktail Park Reservoir</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>###-###-#### ririeChamber@gmail.com</p>
+        <p>&copy; <span id="year"></span> - R. Christian Wilkerson - ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/nav-wayfinding.js"></script>
+    <script src="scripts/get-dates.js"></script>
+    <script src="scripts/menu-keyboard.js"></script>
+    <script src="scripts/latest-visit.js"></script>
+</body>
+</html>
