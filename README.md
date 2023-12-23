@@ -40,11 +40,29 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - Additional Details: great time to learn grid and flexbox.
  
 - **Sleep-Outside**:
-  - Website Link: https://phenomenal-sable-3385d8.netlify.app/index.html.
+  - Repository Link: https://github.com/Rich-Wilkyness/WDD-230---Sleep-Outside.
   - Description: Dynamic website displaying outdoor gear, add to cart, and checkout.
-  - Additional Tech Used: node (preset), Vite, Prettier(format), trello.
-  - Additional Details: first group project. Used trello(agile/scrum) to direct project through semester.
+  - Additional Tech Used: Node (preset), Vite, Prettier(format), trello.
+  - How to Run: Run using the extension "Live Server" on vscode.
+  - Additional Details: School shutdown the production site it was on, so altered code to run on "Live Server". First group project. Used trello(agile/scrum) to direct project through semester.
 
+- **Netflix Clone**: 
+  - Description: 
+  - How to Run: 
+  - Additional Details: 
+    
+### Node.js
+- **Santas Workshop**: 
+  - Description: 
+  - How to Run: 
+  - Additional Details: 
+
+### PHP
+- **Phpmotors**: 
+  - Description: 
+  - How to Run: 
+  - Additional Details: 
+    
 ## Contact Information
 
 - **LinkedIn**: www.linkedin.com/in/christian-wilkerson-4b0766135
