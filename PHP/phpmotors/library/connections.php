@@ -23,3 +23,5 @@ function phpmotorsConnect() {
 }
 
 phpmotorsConnect();
+// admin username: admin@cse340.net
+// admin password: Sup3rU$er
