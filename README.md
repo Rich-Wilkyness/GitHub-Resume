@@ -1,6 +1,6 @@
 # My Resume Repository
 
-Welcome to my GitHub resume repository! This repository contains a collection of personal and school projects organized by programming language and specific project. Feel free to explore my work and reach out to me if you have any questions or collaboration opportunities.
+Welcome to my GitHub resume repository! This repository contains a collection of personal and some school projects organized by programming language and specific project. Feel free to explore my work and reach out to me if you have any questions or collaboration opportunities.
 
 ## Languages
 
@@ -35,7 +35,7 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - How to Run: Run in the terminal.
   - Additional Details: learned how to save and load a profile.
 
-- **InovatorsGithub**:
+- **MyArea**:
   - Description: Team project that uses C# Blazor server and Bootstrap. Features include User registration and login, user profile, and user blog posts.
   - Additional Tech Used: Blazor, Bootstrap, Entity Framework, and Azure.
 
