@@ -4,6 +4,14 @@ Welcome to my GitHub resume repository! This repository contains a collection of
 
 ## Languages
 
+### Golang
+- **Kether**: 
+  - Description: A simple web application that currently allows a user to register, login, logout, edit and delete their profile.
+  - Future: Still working with a friend to add the ability to create a test, add questions to that test, and retrieve a test that will populate with the assigned questions.
+  - Additional Technologies Used: Chi, SCS, NoSurf and PostgreSQL.
+  - How to Run: Follow to repos readme.md file.
+  - Additional Details: Personal project inspired by several hours of Udemy tutorials applied to something I wanted to try and build.
+
 ### Python
 - **Shopping Cart**: 
   - Description: Add/remove by item w/ quantity. Calculates tax and total. All displayed in a GUI.
@@ -27,26 +35,29 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - How to Run: Run in the terminal.
   - Additional Details: learned how to save and load a profile.
 
+- **InovatorsGithub**:
+  - Description: Team project that uses C# Blazor server and Bootstrap. Features include User registration and login, user profile, and user blog posts.
+  - Additional Tech Used: Blazor, Bootstrap, Entity Framework, and Azure.
+
 ### HTML/CSS
-- **Cosmetology Website**: Personal Project
+- **Cosmetology Website**: First Website Personal Project
   - Description: simple website to display location, about them, and prices of cuts.
   - How to Run: Run using the extension "Live Server" on vscode.
   - Additional Details: Built for my sister and brother-in-law.
 
-### Frontend/JavaScript
+### JavaScript
 - **Chamber**: 
   - Description: Ririe Idaho Chamber of Commerce website. Using weather api and json to dynamically display information.
   - How to Run: Run using the extension "Live Server" on vscode.
   - Additional Details: great time to learn grid and flexbox.
  
 - **Sleep-Outside**:
-  - Repository Link: https://github.com/Rich-Wilkyness/WDD-230---Sleep-Outside.
   - Description: Dynamic website displaying outdoor gear, add to cart, and checkout.
   - Additional Tech Used: Node (preset), Vite, Prettier(format), trello.
   - How to Run: Run using the extension "Live Server" on vscode.
-  - Additional Details: School shutdown the production site it was on, so altered code to run on "Live Server". First group project. Used trello(agile/scrum) to direct project through semester.
+  - Additional Details: School shutdown the production site it was on, so altered code to run on "Live Server". First school group project. Used trello(agile/scrum) to direct project through semester.
 
-- **Netflix Clone**: Personal Project
+- **Netflix Clone (movieapi)**: Personal Project
   - Description: Unfinished clone of netflix. Has the greeting page and movie slide show page. Currently the watch later only works after 6 movies have been selected from the Popular on Netflix section. 
   - How to Run: https://rich-wilkyness.github.io/movieapi/
   - Additional Details: I hope to use node.js and react to take this project forward in the future, but currently learning both of these on my free time.
@@ -57,6 +68,11 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - Additional Tech Used: MongoDB, Swagger, Mongoose, Express, Cors, Passport, and Render
   - How to Run: https://cse341-santas-workshop.onrender.com. going to /api-docs will take you to the swagger page to make any request. certain requests can only be made after using OAuth by going to /login and going through the process of logging into your github.
   - Additional Details: 
+
+### Next.js
+- **Not A Financial Advisor**: 
+  - Description: Features include a User Registration, Login, and Logout.
+  - Additional Tech Used: TypeScript, Tailwind CSS, and Vercel.
 
 ### PHP
 - **Phpmotors**: 
@@ -69,6 +85,7 @@ Welcome to my GitHub resume repository! This repository contains a collection of
 
 - **LinkedIn**: www.linkedin.com/in/christian-wilkerson-4b0766135
 - **Email**: r.christian.wilkerson@gmail.com
+- **Phone Text**: 254-768-6448
 
-Feel free to connect with me on LinkedIn or reach out via email if you have any questions or would like to discuss potential opportunities.
+Feel free to connect with me by text or reach out via email if you have any questions or would like to discuss potential opportunities.
 
