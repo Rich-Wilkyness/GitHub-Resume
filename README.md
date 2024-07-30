@@ -5,8 +5,8 @@ Welcome to my GitHub resume repository! This repository contains a collection of
 ## Languages
 
 ### Golang
-- **Kether**: 
-  - Description: A simple web application that currently allows a user to register, login, logout, edit and delete their profile.
+- **[Kether](https://github.com/Rich-Wilkyness/kether)**: 
+  - Description: A simple web application that currently allows a user to register, login, logout, edit and delete their profile with authN and authZ.
   - Future: Still working with a friend to add the ability to create a test, add questions to that test, and retrieve a test that will populate with the assigned questions.
   - Additional Technologies Used: Chi, SCS, NoSurf and PostgreSQL.
   - How to Run: Follow to repos readme.md file.
@@ -35,7 +35,7 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - How to Run: Run in the terminal.
   - Additional Details: learned how to save and load a profile.
 
-- **MyArea**:
+- **[MyArea](https://dev.azure.com/team06innovators/Team06%20Innovators%20Project/_git/Team06%20Innovators%20Project)**:
   - Description: Team project that uses C# Blazor server and Bootstrap. Features include User registration and login, user profile, and user blog posts.
   - Additional Tech Used: Blazor, Bootstrap, Entity Framework, and Azure.
 
@@ -51,26 +51,26 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - How to Run: Run using the extension "Live Server" on vscode.
   - Additional Details: great time to learn grid and flexbox.
  
-- **Sleep-Outside**:
+- **[Sleep-Outside](https://github.com/Rich-Wilkyness/WDD-230---Sleep-Outside)**:
   - Description: Dynamic website displaying outdoor gear, add to cart, and checkout.
   - Additional Tech Used: Node (preset), Vite, Prettier(format), trello.
   - How to Run: Run using the extension "Live Server" on vscode.
   - Additional Details: School shutdown the production site it was on, so altered code to run on "Live Server". First school group project. Used trello(agile/scrum) to direct project through semester.
 
-- **Netflix Clone (movieapi)**: Personal Project
+- **[Netflix Clone](https://github.com/Rich-Wilkyness/movieapi) (movieapi)**: Personal Project
   - Description: Unfinished clone of netflix. Has the greeting page and movie slide show page. Currently the watch later only works after 6 movies have been selected from the Popular on Netflix section. 
   - How to Run: https://rich-wilkyness.github.io/movieapi/
   - Additional Details: I hope to use node.js and react to take this project forward in the future, but currently learning both of these on my free time.
     
 ### Node.js
-- **Santas Workshop**: 
+- **[Santas Workshop](https://github.com/Rich-Wilkyness/CSE341-Santas-Workshop)**: 
   - Description: Practice backend with swagger, a variety of requests, and OAuth.
   - Additional Tech Used: MongoDB, Swagger, Mongoose, Express, Cors, Passport, and Render
   - How to Run: https://cse341-santas-workshop.onrender.com. going to /api-docs will take you to the swagger page to make any request. certain requests can only be made after using OAuth by going to /login and going through the process of logging into your github.
   - Additional Details: 
 
 ### Next.js
-- **Not A Financial Advisor**: 
+- **[Not A Financial Advisor](https://github.com/Rich-Wilkyness/NotAFinancialAdvisor)**: 
   - Description: Features include a User Registration, Login, and Logout.
   - Additional Tech Used: TypeScript, Tailwind CSS, and Vercel.
 
