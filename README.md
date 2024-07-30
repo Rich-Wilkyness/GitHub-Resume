@@ -36,7 +36,7 @@ Welcome to my GitHub resume repository! This repository contains a collection of
   - Additional Details: learned how to save and load a profile.
 
 - **[MyArea](https://dev.azure.com/team06innovators/Team06%20Innovators%20Project/_git/Team06%20Innovators%20Project)**:
-  - Description: Team project that uses C# Blazor server and Bootstrap. Features include User registration and login, user profile, and user blog posts.
+  - Description: Team project that uses C# Blazor server and Bootstrap. Features include User registration and login with AuthN and AuthZ, user profile CRUD, and allows a user to create a blog or search for others blogs.
   - Additional Tech Used: Blazor, Bootstrap, Entity Framework, and Azure.
 
 ### HTML/CSS
